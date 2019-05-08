@@ -1,0 +1,3 @@
+[submodule "jsondiff"]
+	path = jsondiff
+	url = https://github.com/ilm4zz4/jsondiff.git

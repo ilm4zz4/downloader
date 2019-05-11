@@ -200,7 +200,9 @@ for user in difftext: #update, inserted
         print ("Start Download for user: "  ,user)     
         
     for ctrl in difftext[user]: #Update content
-        
+        if ctrl == 'insert':
+           ctrl=difftext[user][ctrl][0][1]
+       
         filename = list(eval(str(ctrl)).keys())[0]
         output_path = path + '/' + user + '/' + filename
         request = '/' + user + '/' + filename
